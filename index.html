@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEPHILE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>CINEPHILE</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search for a movie or web series...">
+            </div>
+            <div id="movies" class="movies"></div>
+        </div>
+    </div>
+
+    <!-- Movie Details Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn" class="close">&times;</span>
+            <div class="modal-images">
+                <img id="modalPoster" src="" alt="Poster">
+            </div>
+            <h2 id="modalTitle"></h2>
+            <p id="modalOverview"></p>
+            <p><strong>Year:</strong> <span id="modalYear"></span></p>
+            <p><strong>Language:</strong> <span id="modalLanguage"></span></p>
+            <p><strong>Country:</strong> <span id="modalCountry"></span></p>
+            <p><strong>IMDb Rating:</strong> <span id="modalRating"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
